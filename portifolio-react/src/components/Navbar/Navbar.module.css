@@ -1,0 +1,87 @@
+@import "../../styles/globals.css";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.75);
+  border-bottom: 1px solid var(--border);
+}
+
+.inner {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+.logo span {
+  color: var(--primary);
+}
+
+.nav {
+  display: none;
+  gap: 1.2rem;
+}
+.nav a {
+  color: var(--muted);
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+.nav a:hover {
+  color: var(--text);
+}
+
+.menuButton {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  background: transparent;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  padding: 0;
+}
+.menuButton span {
+  width: 18px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+}
+
+.navOpen {
+  display: flex;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  padding: 1rem;
+  background: rgba(17, 24, 39, 0.98);
+  border-bottom: 1px solid var(--border);
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+  .nav {
+    display: flex;
+  }
+  .navOpen {
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+}
