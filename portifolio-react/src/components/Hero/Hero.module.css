@@ -1,0 +1,80 @@
+@import "../../styles/globals.css";
+
+.hero {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  max-width: 760px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center; /*talvez não precise*/
+  gap: 0.5rem; /*talvez não precise*/
+  padding: 0.45rem 0.85rem; /*talvez não precise*/
+  border-radius: 999px; /*talvez não precise*/
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem; /*talvez não precise*/
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.5rem, 8vw, 5rem); /*muito grande*/
+  line-height: 1.05; /*talvez não precise*/
+  margin: 0; /*talvez não precise*/
+}
+h1 span {
+  color: var(--primary);
+}
+
+h2 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem); /*talvez não precise*/
+  font-weight: 600; /*talvez não precise*/
+  color: var(--muted);
+  margin: 1rem 0; /*talvez não precise*/
+}
+
+.text {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 2rem; /*talvez não precise*/
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.9rem 1.25rem; /*diminuir*/
+  border-radius: 14px;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+.primaryButton {
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #fff;
+  transition: 0.25s ease;
+}
+.secondaryButton {
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.3); /*talvez não precise*/
+}
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 2rem;
+  }
+}
