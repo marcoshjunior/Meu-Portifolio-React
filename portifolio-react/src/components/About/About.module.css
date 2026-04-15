@@ -1,0 +1,64 @@
+@import "../../styles/globals.css";
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.card,
+.stats {
+  background: rgba(31, 41, 55, 0.65);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card {
+  padding: 1.4rem;
+  transition: 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  background: rgba(39, 50, 68, 0.8);
+}
+.card h3 {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+}
+.card p {
+  color: var(--muted);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.4rem;
+}
+.stats div {
+  text-align: center;
+}
+.stats strong {
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+.stats span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 767px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.3fr, 1.3fr, 1fr;
+    align-items: stretch;
+  }
+  .stats {
+    /*grid-template-columns: 1fr;*/
+  }
+}
