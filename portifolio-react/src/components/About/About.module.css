@@ -59,6 +59,7 @@
     align-items: stretch;
   }
   .stats {
-    /*grid-template-columns: 1fr;*/
+    /*talvez não precise*/
+    grid-template-columns: 1fr;
   }
 }
