@@ -1,26 +1,33 @@
 @import "../../styles/globals.css";
 
 .header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(12px);
-  background: rgba(15, 23, 42, 0.75);
+  /*transition: 0.1s ease;*/
+}
+.header {
+  background: transparent;
+}
+
+.scrolled {
+  background: white;
   border-bottom: 1px solid var(--border);
 }
 
 .inner {
-  min-height: 72px;
+  width: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .logo {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.3px;
 }
 .logo span {
@@ -28,24 +35,47 @@
 }
 
 .nav {
-  display: none;
-  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem;
+  gap: 1rem;
+
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: 0.25s ease;
 }
 .nav a {
-  color: var(--muted);
-  font-weight: 500;
+  width: 100%;
+  max-width: 250px;
+  color: var(--text-muted);
+  font-size: 1rem;
   transition: 0.25s ease;
 }
 .nav a:hover {
   color: var(--text);
 }
 
+.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 .menuButton {
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   border: 1px solid var(--border);
   background: transparent;
-  border-radius: 12px;
+  border-radius: 10px;
   display: grid;
   place-items: center;
   gap: 4px;
@@ -55,19 +85,6 @@
   width: 18px;
   height: 2px;
   background: var(--text);
-  border-radius: 999px;
-}
-
-.navOpen {
-  display: flex;
-  position: absolute;
-  top: 72px;
-  left: 0;
-  right: 0;
-  flex-direction: column;
-  padding: 1rem;
-  background: rgba(17, 24, 39, 0.98);
-  border-bottom: 1px solid var(--border);
 }
 
 @media (min-width: 768px) {
@@ -76,12 +93,20 @@
   }
   .nav {
     display: flex;
-  }
-  .navOpen {
     position: static;
     flex-direction: row;
-    padding: 0;
+    align-items: center;
+    text-align: left;
+
+    width: auto;
+    margin-left: 0;
+
     background: transparent;
-    border: 0;
+    border: none;
+    padding: 0;
+
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
   }
 }

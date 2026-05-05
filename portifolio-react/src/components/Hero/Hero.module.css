@@ -1,32 +1,34 @@
 @import "../../styles/globals.css";
 
 .hero {
-  min-height: calc(100vh - 72px);
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 .content {
-  max-width: 760px;
+  width: 100%;
 }
 
+/*
 .badge {
   display: inline-flex;
-  align-items: center; /*talvez não precise*/
-  gap: 0.5rem; /*talvez não precise*/
-  padding: 0.45rem 0.85rem; /*talvez não precise*/
-  border-radius: 999px; /*talvez não precise*/
+  align-items: center; 
+  gap: 0.5rem; 
+  padding: 0.45rem 0.85rem; 
+  border-radius: 999px; 
   background: rgba(56, 189, 248, 0.12);
   color: var(--primary);
   font-size: 0.95rem;
-  margin-bottom: 1.25rem; /*talvez não precise*/
+  margin-bottom: 1.25rem; 
 }
+*/
 
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: clamp(2.5rem, 8vw, 5rem); /*muito grande*/
-  line-height: 1.05; /*talvez não precise*/
-  margin: 0; /*talvez não precise*/
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin: 0;
 }
 h1 span {
   color: var(--primary);
@@ -39,38 +41,56 @@ h2 {
   margin: 1rem 0; /*talvez não precise*/
 }
 
-.text {
+.line {
+  width: 0;
+  height: 3px;
+  background: var(--primary);
+  margin: 1rem auto 1.5rem;
+  animation: grow 1s ease forwards;
+}
+@keyframes grow {
+  to {
+    width: 120px;
+  }
+}
+
+.subtitle {
   max-width: 650px;
-  color: var(--muted);
-  font-size: 1.05rem;
-  margin-bottom: 2rem; /*talvez não precise*/
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin: auto;
 }
 
 .actions {
+  margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
 }
 
-.primaryButton,
-.secondaryButton {
-  padding: 0.9rem 1.25rem; /*diminuir*/
-  border-radius: 14px;
-  font-weight: 700;
-  transition: 0.25s ease;
+.primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.9rem 1.3rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: 0.2s;
 }
-.primaryButton {
-  background: linear-gradient(135deg, var(--primary), var(--primary-2));
-  color: #fff;
-  transition: 0.25s ease;
-}
-.secondaryButton {
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.3); /*talvez não precise*/
-}
-.primaryButton:hover,
-.secondaryButton:hover {
+.primary:hover {
+  background: var(--primary-hover);
   transform: translateY(-2px);
+}
+
+.secondary {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 0.9rem 1.3rem;
+  border-radius: var(--radius);
+  transition: 0.2s;
+}
+.secondary:hover {
+  background: var(--primary);
+  color: white;
 }
 
 @media (min-width: 768px) {

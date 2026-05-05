@@ -1,18 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap");
 
 :root {
-  --bg: #0f172a;
-  --bg-secondary: #111827;
+  --bg: #ffffff;
+  --bg-soft: #f5f5f5;
+
   --card: #1f2937;
   --card-hover: #273244;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --primary: #38bdf8;
-  --primary-2: #8b5cf6;
-  --border: rgba(255, 255, 255, 0.08);
-  --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
-  --radius: 18px;
-  --container: 1120px;
+
+  --text: #0f0f0f;
+  --text-muted: #6b7280;
+
+  --primary: #f97316;
+  --primary-hover: #ea580c;
+
+  --border: rgba(0, 0, 0, 0.08);
+
+  --radius: 14px;
+  --container: 1100px;
 }
 
 * {
@@ -26,12 +30,9 @@ html {
 body {
   margin: 0;
   font-family: "inter", sans-serifs;
-  background:
-    radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 30%),
-    radial-gradient(circle at right, rgba(139, 92, 246, 0.08), transparent 25%),
-    var(--bg);
+  background: var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  /*line-height: 1.6;*/
 }
 
 a {
@@ -51,7 +52,8 @@ textarea {
 }
 
 .container {
-  width: min(var(--container), calc(100% - 2rem));
+  width: min(1100px, calc(100% - 2rem));
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -62,11 +64,12 @@ textarea {
 .sectionTitle {
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.6rem);
-  margin: 0 0 1rem;
+  /*margin: 0 0 1rem;*/
+  margin-bottom: 1rem; /*talvez não precise*/
 }
 
 .sectionSubtitle {
   max-width: 700px;
-  color: var(--muted);
-  margin: 0 0 2rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
 }

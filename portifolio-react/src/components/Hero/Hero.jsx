@@ -8,17 +8,21 @@ export default function Hero() {
       <div className="container">
         <FadeInSection />
         <div className={styles.content}>
-          <p className={styles.badge}>Disponivel para freelas e estagio</p>
+          {/*<p className={styles.badge}>Disponivel para freelas e estagio</p>*/}
           <h1>
             Olá, eu sou <span>{profile.name}</span>
           </h1>
+          <div className={styles.line}></div>
+
           <h2>{profile.role}</h2>
-          <p className={styles.text}>{profile.bio}</p>
+
+          <p className={styles.subtitle}>{profile.bio}</p>
+
           <div className={styles.actions}>
-            <a className={styles.primaryButton} href="#projetos">
+            <a className={styles.primary} href="#projetos">
               Ver projetos
             </a>
-            <a className={styles.secondaryButton} href="#contato">
+            <a className={styles.secondary} href="#contato">
               falar comigo
             </a>
           </div>
