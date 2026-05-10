@@ -12,7 +12,7 @@ export default function About() {
           exercitationem unde incidunt.
         </p>
         <div className={styles.grid}>
-          <div className={styles.card}>
+          <article className={styles.card}>
             <h3>Quem sou eu</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
@@ -20,28 +20,14 @@ export default function About() {
               consequatur doloribus debitis obcaecati sit quam voluptatum facere
               tenetur et veritatis.
             </p>
-          </div>
-          <div className={styles.card}>
+          </article>
+          <article className={styles.card}>
             <h3>Meu objetivo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Accusamus, enim! Laudantium assumenda reiciendis corrupti dolores!
             </p>
-          </div>
-          <div className={styles.stats}>
-            <div>
-              <strong>+5</strong>
-              <span>Projetos</span>
-            </div>
-            <div>
-              <strong>React</strong>
-              <span>principal stack</span>
-            </div>
-            <div>
-              <strong>UI/UX</strong>
-              <span>foco visual</span>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
