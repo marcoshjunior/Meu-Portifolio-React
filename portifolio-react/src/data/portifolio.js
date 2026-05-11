@@ -39,8 +39,8 @@ export const projects = [
     title: "Catálogo de Carros",
     description:
       "Aplicação para buscar e filtrar carros, com cards organizados e interface moderna.",
-    stack: ["React", "API REST", "CSS Modules"],
     image: "/src/assets/images/project-1.jpg",
+    stack: ["React", "API REST", "CSS Modules"],
     demo: "#",
     code: "#",
   },
@@ -48,8 +48,9 @@ export const projects = [
     title: "Portfólio Pessoal",
     description:
       "Site de apresentação com seções bem divididas, animações suaves e layout responsivo.",
-    stack: ["React", "UI/UX", "Responsivo"],
     image: "/src/assets/images/project-2.jpg",
+    stack: ["React", "UI/UX", "Responsivo"],
+
     demo: "#",
     code: "#",
   },
@@ -57,8 +58,8 @@ export const projects = [
     title: "Dashboard de Estudos",
     description:
       "Painel com organização de tarefas, progresso e blocos visuais para acompanhamento.",
-    stack: ["React", "Componentização", "Design System"],
     image: "/src/assets/images/project-3.jpg",
+    stack: ["React", "Componentização", "Design System"],
     demo: "#",
     code: "#",
   },
