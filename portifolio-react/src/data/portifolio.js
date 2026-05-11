@@ -18,7 +18,11 @@ export const navLinks = [
 export const technologies = [
   {
     title: "Frontend",
-    items: ["React", "JavaScript", "HTML5", "CSS3", "Responsividade"],
+    items: ["HTML5", "CSS3", "React", "Responsividade"],
+  },
+  {
+    title: "Backend",
+    items: ["JavaScript", "C#"],
   },
   {
     title: "Ferramentas",
@@ -26,7 +30,7 @@ export const technologies = [
   },
   {
     title: "Em aprendizado",
-    items: ["TypeScript", "Next.js", "Node.js", "Tailwind CSS"],
+    items: ["TypeScript", "Node.js", "UI/UX"],
   },
 ];
 
