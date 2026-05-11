@@ -1,0 +1,36 @@
+@import "../../styles/globals.css";
+
+.container {
+  text-align: center;
+}
+
+.emailButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: white;
+  padding: 1rem 1.4rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+.emailButton:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.links a {
+  color: var(--text-muted);
+  transition: 0.2s ease;
+}
+.links a:hover {
+  color: var(--primary);
+}
