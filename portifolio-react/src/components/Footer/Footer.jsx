@@ -4,18 +4,12 @@ import styles from "./Footer.module.css";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="container">
-        <div className={styles.inner}>
-          <p>
-            © {new Date().getFullYear()} {profile.name}. Todos os direitos
-            reservados.
-          </p>
-          <div className={styles.links}>
-            <a href="#inicio">Início</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-          </div>
-        </div>
+      <div className={styles.container}>
+        <h3>
+          {new Date().getFullYear()} {profile.name}
+          <span>.</span>
+        </h3>
+        <p>© Todos os direitos reservados.</p>
       </div>
     </footer>
   );
