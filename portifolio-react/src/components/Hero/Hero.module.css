@@ -5,25 +5,12 @@
   display: flex;
   align-items: center;
   text-align: center;
+  background: var(--bg-soft);
 }
 
 .content {
   width: 100%;
 }
-
-/*
-.badge {
-  display: inline-flex;
-  align-items: center; 
-  gap: 0.5rem; 
-  padding: 0.45rem 0.85rem; 
-  border-radius: 999px; 
-  background: rgba(56, 189, 248, 0.12);
-  color: var(--primary);
-  font-size: 0.95rem;
-  margin-bottom: 1.25rem; 
-}
-*/
 
 h1 {
   font-family: "Poppins", sans-serif;
@@ -56,7 +43,7 @@ h2 {
 
 .subtitle {
   max-width: 650px;
-  color: var(--text-muted);
+  color: var(--text-second);
   font-size: 1.1rem;
   margin: auto;
 }

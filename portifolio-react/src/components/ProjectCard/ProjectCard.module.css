@@ -4,12 +4,12 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  background: white;
+  background: var(--bg-soft);
   transition: 0.25s ease;
 }
 .card:hover {
   transform: translateY(-4px);
-  background: rgba(249, 115, 22, 0.2);
+  background: var(--bg);
 }
 
 .imageWrapper {
@@ -36,7 +36,7 @@
   font-size: 1.3rem;
 }
 .content p {
-  color: var(--text-muted);
+  color: var(--text-second);
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -48,7 +48,7 @@
   margin-bottom: 1.5rem;
 }
 .stack span {
-  background: #f5f5f5;
+  background: var(--bg);
   padding: 0.6rem 0.9rem;
   border-radius: 999px;
   font-size: 0.9rem;

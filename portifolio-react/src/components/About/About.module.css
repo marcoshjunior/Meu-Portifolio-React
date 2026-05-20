@@ -9,12 +9,11 @@
   padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: white;
+  background: var(--bg-soft);
   transition: 0.25s ease;
 }
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(249, 115, 22, 0.2);
 }
 .card h3 {
   font-family: "Poppins" sans-serif;
@@ -23,7 +22,7 @@
   margin-bottom: 1rem;
 }
 .card p {
-  color: var(--text-muted);
+  color: var(--text-second);
   line-height: 1.8;
   margin: 0;
 }

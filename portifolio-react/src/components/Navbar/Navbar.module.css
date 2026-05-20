@@ -12,7 +12,7 @@
 }
 
 .scrolled {
-  background: white;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
 }
 
@@ -43,7 +43,7 @@
   top: 70px;
   left: 0;
   width: 100%;
-  background: white;
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   padding: 1rem;
   gap: 1rem;
@@ -56,12 +56,12 @@
 .nav a {
   width: 100%;
   max-width: 250px;
-  color: var(--text-muted);
+  color: var(--text);
   font-size: 1rem;
   transition: 0.25s ease;
 }
 .nav a:hover {
-  color: var(--text);
+  color: var(--primary);
 }
 
 .open {
