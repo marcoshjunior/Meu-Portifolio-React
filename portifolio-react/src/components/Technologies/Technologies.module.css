@@ -14,11 +14,13 @@
 }
 .card:hover {
   transform: translateY(-4px);
+  box-shadow: var(--shadow-box);
 }
 .card h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   margin-top: 0;
+  color: var(--primary);
 }
 
 .tags {
@@ -35,7 +37,7 @@
   transition: 0.25s ease;
 }
 .tags span:hover {
-  background: rgba(249, 115, 22, 0.12);
+  background: var(--bg-soft);
   color: var(--primary);
 }
 
