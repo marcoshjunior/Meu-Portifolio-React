@@ -1,0 +1,37 @@
+@import "../../styles/globals.css";
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  transition: 0.25s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-box);
+}
+
+.card h3 {
+  font-family: "Poppins" sans-serif;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+.card p {
+  color: var(--text-second);
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

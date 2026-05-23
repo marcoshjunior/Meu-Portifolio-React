@@ -8,10 +8,10 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
-  { label: "Tecnologias", href: "#tecnologias" },
+  { label: "Cursos", href: "#cursos" },
   { label: "Projetos", href: "#projetos" },
+  { label: "Tecnologias", href: "#tecnologias" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -62,5 +62,18 @@ export const projects = [
     stack: ["React", "Componentização", "Design System"],
     demo: "#",
     code: "#",
+  },
+];
+
+export const courses = [
+  {
+    title: "Aluna imersão dev back end",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quos, officiis iusto tempora inventore officia magni ea ducimus consequatur doloribus debitis obcaecati sit quam voluptatum facere tenetur et veritatis.",
+  },
+  {
+    title: "Aluna imersão dev back end",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quos, officiis iusto tempora inventore officia magni ea ducimus consequatur doloribus debitis obcaecati sit quam voluptatum facere tenetur et veritatis.",
   },
 ];
