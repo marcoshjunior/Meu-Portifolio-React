@@ -1,10 +1,10 @@
 export const profile = {
-  name: "Seu Nome",
-  role: "Desenvolvedor Front-end React",
+  name: "Marcos Jr",
+  role: "Desenvolvedor de Software",
   bio: "Crio interfaces modernas, responsivas e focadas em experiência do usuário. Gosto de transformar ideias em produtos claros e funcionais.",
-  email: "seuemail@email.com",
-  github: "https://github.com/seuusuario",
-  linkedin: "https://www.linkedin.com/in/seuperfil/",
+  email: "marcosjuniorbrito6@gmail.com",
+  github: "https://github.com/marcoshjunior",
+  linkedin: "https://www.linkedin.com/in/marcos-junior1",
 };
 
 export const navLinks = [
@@ -32,32 +32,22 @@ export const technologies = [
 
 export const projects = [
   {
-    title: "Catálogo de Carros",
+    title: "Conversor de Moedas",
     description:
-      "Aplicação para buscar e filtrar carros, com cards organizados e interface moderna.",
-    image: "/src/assets/images/project-1.jpg",
-    stack: ["React", "API REST", "CSS Modules"],
-    demo: "#",
-    code: "#",
+      "Converte moedas utilizando taxas de câmbio atualizadas por meio de uma API externa.",
+    image: "/src/assets/images/img-moeda.png",
+    stack: ["HTML", "CSS", "JavaScript", "API"],
+    demo: "https://marcoshjunior.github.io/Conversor-de-Moedas/",
+    code: "https://github.com/marcoshjunior/Conversor-de-Moedas",
   },
   {
-    title: "Portfólio Pessoal",
+    title: "Calculo de IMC",
     description:
-      "Site de apresentação com seções bem divididas, animações suaves e layout responsivo.",
-    image: "/src/assets/images/project-2.jpg",
-    stack: ["React", "UI/UX", "Responsivo"],
-
-    demo: "#",
-    code: "#",
-  },
-  {
-    title: "Dashboard de Estudos",
-    description:
-      "Painel com organização de tarefas, progresso e blocos visuais para acompanhamento.",
-    image: "/src/assets/images/project-3.jpg",
-    stack: ["React", "Componentização", "Design System"],
-    demo: "#",
-    code: "#",
+      "Calculadora de Massa Corporal (IMC) e com base no peso e altura informados pelo usuário exibe a sua classificação.",
+    image: "/src/assets/images/img-calculoIMC.png",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: "https://marcoshjunior.github.io/CalcularIMC/",
+    code: "https://github.com/marcoshjunior/CalcularIMC",
   },
 ];
 

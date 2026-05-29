@@ -69,12 +69,5 @@ textarea {
 .sectionTitle {
   font-family: "Poppins", sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.6rem);
-  /*margin: 0 0 1rem;*/
-  margin-bottom: 1rem; /*talvez não precise*/
-}
-
-.sectionSubtitle {
-  max-width: 700px;
-  color: var(--text-second);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }

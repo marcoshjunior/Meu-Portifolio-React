@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={`container ${styles.inner}`}>
         <a className={styles.logo} href="#inicio">
-          SeuNome<span>.</span>
+          MarcosJr<span>.</span>
         </a>
         <button
           className={styles.menuButton}

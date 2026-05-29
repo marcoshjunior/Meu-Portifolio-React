@@ -8,10 +8,6 @@ export default function Technologies() {
       <div className="container">
         <FadeInSection />
         <h2 className="sectionTitle">Tecnologias</h2>
-        <p className="sectionSubtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-          enim!
-        </p>
         <div className={styles.grid}>
           {technologies.map((group) => (
             <article className={styles.card} key={group.title}>

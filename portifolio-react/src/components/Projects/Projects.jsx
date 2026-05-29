@@ -9,9 +9,6 @@ export default function Projects() {
       <div className="container">
         <FadeInSection />
         <h2 className="sectionTitle">Projetos</h2>
-        <p className="sectionSubtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione.
-        </p>
         <div className={styles.grid}>
           {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />

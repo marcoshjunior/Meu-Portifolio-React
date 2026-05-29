@@ -10,12 +10,9 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-soft);
-  transition: 0.25s ease;
-}
-.card:hover {
-  transform: translateY(-4px);
   box-shadow: var(--shadow-box);
 }
+
 .card h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
@@ -41,8 +38,10 @@
   color: var(--primary);
 }
 
+/*
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+  */
