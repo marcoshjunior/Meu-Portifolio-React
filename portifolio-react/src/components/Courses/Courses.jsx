@@ -7,7 +7,7 @@ export default function Courses() {
     <section id="cursos" className="section">
       <div className="container">
         <FadeInSection />
-        <h2 className="sectionTitle">Cursos</h2>
+        <h2 className="sectionTitle">Formações/Cursos</h2>
         <p className="sectionSubtitle">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
           enim!
@@ -16,7 +16,8 @@ export default function Courses() {
           {courses.map((group) => (
             <article className={styles.card} key={group.title}>
               <h3>{group.title}</h3>
-              <p>{group.description}</p>
+              <p className={styles.institution}>{group.institution}</p>
+              <p className={styles.description}>{group.description}</p>
             </article>
           ))}
         </div>

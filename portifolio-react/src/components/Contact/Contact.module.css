@@ -3,6 +3,10 @@
 .container {
   text-align: center;
 }
+.container p {
+  margin-left: 100px;
+  margin-right: 100px;
+}
 
 .emailButton {
   display: inline-flex;

@@ -22,11 +22,7 @@ export const technologies = [
   },
   {
     title: "Backend",
-    items: ["JavaScript", "C#"],
-  },
-  {
-    title: "Ferramentas",
-    items: ["Git", "GitHub", "Vite", "Figma", "VS Code"],
+    items: ["JavaScript", "Git", "GitHub", "Vite"],
   },
   {
     title: "Em aprendizado",
@@ -67,13 +63,27 @@ export const projects = [
 
 export const courses = [
   {
-    title: "Aluna imersão dev back end",
+    title: "Gestão da Tecnologia da Informação",
+    institution: "Unicesumar",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quos, officiis iusto tempora inventore officia magni ea ducimus consequatur doloribus debitis obcaecati sit quam voluptatum facere tenetur et veritatis.",
+      "Foco em gestão de processos de TI, infraestrutura, governança, análise de sistemas e gestão de projetos tecnológicos. Desenvolvimento de conhecimentos em banco de dados, redes, engenharia de software e estratégias para alinhar tecnologia às necessidades do negócio.",
   },
   {
-    title: "Aluna imersão dev back end",
+    title: "Google Cloud",
+    institution: "Google",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum quos, officiis iusto tempora inventore officia magni ea ducimus consequatur doloribus debitis obcaecati sit quam voluptatum facere tenetur et veritatis.",
+      "Foco nos fundamentos de computação em nuvem utilizando Google Cloud Platform (GCP), incluindo conceitos de hospedagem, armazenamento, serviços cloud, infraestrutura escalável e deploy de aplicações.",
+  },
+  {
+    title: "Imersão dev back end",
+    institution: "Alura",
+    description:
+      "Curso prático de desenvolvimento back-end com foco na criação de APIs e integração entre aplicações utilizando Node.js, JavaScript, Express e Google Gemini.",
+  },
+  {
+    title: "Lógica de Programação com JavaScript",
+    institution: "Alura",
+    description:
+      "Curso prático dos fundamentos da programação com JavaScript, abordando variáveis, condicionais, loops e funções aplicado ao desenvolvimento.",
   },
 ];
