@@ -15,6 +15,7 @@
   background: var(--primary);
   color: white;
   padding: 1rem 1.4rem;
+  margin-top: 15px;
   border-radius: var(--radius);
   font-weight: 600;
   transition: 0.25s ease;

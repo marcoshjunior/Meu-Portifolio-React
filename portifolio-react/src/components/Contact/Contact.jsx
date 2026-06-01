@@ -7,8 +7,8 @@ export default function Contact() {
       <div className={`container ${styles.container}`}>
         <h2 className="sectionTitle">Contato</h2>
         <p className="sectionSubtitle">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
-          voluptatem ab possimus qui.
+          Tem uma oportunidade, projeto ou quer trocar uma ideia sobre
+          tecnologia? Entre em contato comigo!
         </p>
 
         <a href={`malito: ${profile.email}`} className={styles.emailButton}>

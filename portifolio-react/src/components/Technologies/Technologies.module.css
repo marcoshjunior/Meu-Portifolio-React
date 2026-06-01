@@ -22,20 +22,22 @@
 
 .tags {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 0.8rem;
 }
-.tags span {
-  padding: 0.7rem 1rem;
-  border-radius: 999px;
-  background: var(--bg);
-  color: var(--text);
-  font-size: 0.95rem;
-  transition: 0.25s ease;
+
+.skills {
+  border-left: 2px solid #444;
+  padding-left: 12px;
 }
-.tags span:hover {
-  background: var(--bg-soft);
-  color: var(--primary);
+.skills strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+.skills p {
+  font-size: 0.9rem;
+  color: var(--text-second);
 }
 
 /*

@@ -14,7 +14,10 @@ export default function Technologies() {
               <h3>{group.title}</h3>
               <div className={styles.tags}>
                 {group.items.map((item) => (
-                  <span key={item}>{item}</span>
+                  <div className={styles.skills} key={item.name}>
+                    <strong>{item.name}</strong>
+                    <p>{item.description}</p>
+                  </div>
                 ))}
               </div>
             </article>

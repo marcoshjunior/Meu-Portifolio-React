@@ -18,15 +18,50 @@ export const navLinks = [
 export const technologies = [
   {
     title: "Frontend",
-    items: ["HTML5", "CSS3", "React", "Responsividade"],
+    items: [
+      {
+        name: "HTML5",
+        description: "Estruturação semântica de páginas",
+      },
+      {
+        name: "CSS3",
+        description: "Layouts responsivos e estilização",
+      },
+      {
+        name: "React",
+        description: "Criação de interfaces e componentização",
+      },
+    ],
   },
   {
     title: "Backend",
-    items: ["JavaScript", "Git", "GitHub", "Vite"],
+    items: [
+      {
+        name: "JavaScript",
+        description: "Lógica e manipulação de dados",
+      },
+      {
+        name: "Git",
+        description: "Controle de versão",
+      },
+      {
+        name: "GitHub",
+        description: "Hospedagem e colaboração de código",
+      },
+    ],
   },
   {
     title: "Em aprendizado",
-    items: ["TypeScript", "Node.js", "UI/UX"],
+    items: [
+      {
+        name: "TypeScript",
+        description: "Tipagem para JavaScript",
+      },
+      {
+        name: "Node.js",
+        description: "Criação de APIs REST",
+      },
+    ],
   },
 ];
 
