@@ -26,6 +26,14 @@ export default function About() {
             </p>
           </article>
         </div>
+        <a
+          className={styles.curriculo}
+          href="https://github.com"
+          download="Curriculo-marcos.pdf"
+          type="applicaton/pdf"
+        >
+          Baixar CV
+        </a>
       </div>
     </section>
   );
