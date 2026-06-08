@@ -1,7 +1,7 @@
 export const profile = {
   name: "Marcos Jr",
   role: "Desenvolvedor de Software",
-  bio: "Crio interfaces modernas, responsivas e focadas em experiência do usuário. Gosto de transformar ideias em produtos claros e funcionais.",
+  bio: "Desenvolvedor focado em projetos modernos, responsivos e em experiência do usuário. Gosto de transformar ideias em produtos claros e funcionais.",
   email: "marcosjuniorbrito6@gmail.com",
   github: "https://github.com/marcoshjunior",
   linkedin: "https://www.linkedin.com/in/marcos-junior1",
@@ -83,6 +83,24 @@ export const projects = [
     stack: ["HTML", "CSS", "JavaScript"],
     demo: "https://marcoshjunior.github.io/CalcularIMC/",
     code: "https://github.com/marcoshjunior/CalcularIMC",
+  },
+  {
+    title: "Jogo da Advinhação",
+    description:
+      "Jogo interativo onde o usuário tenta advinhar um número aleatório gerado pelo sistema. O projeto foi criado para praticar lógica condicional e geração de números aleatórios",
+    image: "/src/assets/images/img-advinhacao.png",
+    stack: ["HTML", "CSS", "JavaScript"],
+    demo: "https://marcoshjunior.github.io/Adivinhacao/",
+    code: "https://github.com/marcoshjunior/Adivinhacao",
+  },
+  {
+    title: "Linktree",
+    description:
+      "Pagina estilo 'linktree' para reunir links de redes sociais e projetos em um só lugar, com foco em uma interface limpa, responsiva e agradável",
+    image: "/src/assets/images/img-linktree.png",
+    stack: ["HTML", "CSS"],
+    demo: "https://marcoshjunior.github.io/Links/",
+    code: "https://github.com/marcoshjunior/Links",
   },
 ];
 
