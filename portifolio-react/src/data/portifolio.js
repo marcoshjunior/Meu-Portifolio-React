@@ -108,24 +108,28 @@ export const courses = [
   {
     title: "Gestão da Tecnologia da Informação",
     institution: "Unicesumar",
+    year: "2023 - 2026",
     description:
       "Foco em gestão de processos de TI, infraestrutura, governança, análise de sistemas e gestão de projetos tecnológicos. Desenvolvimento de conhecimentos em banco de dados, redes, engenharia de software e estratégias para alinhar tecnologia às necessidades do negócio.",
   },
   {
     title: "Google Cloud",
     institution: "Google",
+    year: "2026",
     description:
       "Foco nos fundamentos de computação em nuvem utilizando Google Cloud Platform (GCP), incluindo conceitos de hospedagem, armazenamento, serviços cloud, infraestrutura escalável e deploy de aplicações.",
   },
   {
     title: "Imersão dev back end",
     institution: "Alura",
+    year: "2024",
     description:
       "Curso prático de desenvolvimento back-end com foco na criação de APIs e integração entre aplicações utilizando Node.js, JavaScript, Express e Google Gemini.",
   },
   {
     title: "Lógica de Programação com JavaScript",
     institution: "Alura",
+    year: "2024",
     description:
       "Curso prático dos fundamentos da programação com JavaScript, abordando variáveis, condicionais, loops e funções aplicado ao desenvolvimento.",
   },

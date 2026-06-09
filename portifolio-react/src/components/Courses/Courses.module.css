@@ -3,6 +3,7 @@
 .grid {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card {
@@ -29,13 +30,16 @@
   font-weight: 600;
   margin-top: 0;
 }
+.year {
+  color: var(--text-second);
+}
 .description {
   color: var(--text-second);
   line-height: 1.8;
 }
 
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+  .description {
+    width: 80%;
   }
 }

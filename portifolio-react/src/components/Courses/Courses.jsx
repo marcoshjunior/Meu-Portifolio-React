@@ -13,6 +13,7 @@ export default function Courses() {
             <article className={styles.card} key={group.title}>
               <h3>{group.title}</h3>
               <p className={styles.institution}>{group.institution}</p>
+              <p className={styles.year}>{group.year}</p>
               <p className={styles.description}>{group.description}</p>
             </article>
           ))}
