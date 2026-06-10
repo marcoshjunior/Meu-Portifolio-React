@@ -126,11 +126,4 @@ export const courses = [
     description:
       "Curso prático de desenvolvimento back-end com foco na criação de APIs e integração entre aplicações utilizando Node.js, JavaScript, Express e Google Gemini.",
   },
-  {
-    title: "Lógica de Programação com JavaScript",
-    institution: "Alura",
-    year: "2024",
-    description:
-      "Curso prático dos fundamentos da programação com JavaScript, abordando variáveis, condicionais, loops e funções aplicado ao desenvolvimento.",
-  },
 ];

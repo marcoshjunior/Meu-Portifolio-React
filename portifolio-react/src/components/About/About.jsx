@@ -28,7 +28,7 @@ export default function About() {
         </div>
         <a
           className={styles.curriculo}
-          href="https://github.com"
+          href="../../assets/pdf/Marcos-curriculo.pdf"
           download="Curriculo-marcos.pdf"
           type="applicaton/pdf"
         >
