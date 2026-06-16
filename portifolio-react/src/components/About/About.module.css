@@ -2,14 +2,16 @@
 
 .grid {
   display: grid;
-  gap: 1.5rem;
 }
 
 .card {
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--bg-soft);
+  padding: 2rem;
+  padding-left: 0rem;
+  border-top: 1px solid var(--border);
+}
+.card + .card {
+  padding-right: 0;
+  border-left: none;
 }
 
 .card h3 {
@@ -29,9 +31,8 @@
   display: flex;
   justify-content: center;
   background: var(--primary);
-  margin: auto;
-  margin-top: 40px;
-  width: 20%;
+  margin-top: 50px;
+  width: 130px;
   padding: 0.9rem 1.3rem;
   border-radius: var(--radius);
   font-weight: 600;
@@ -39,14 +40,17 @@
 }
 .curriculo:hover {
   background: var(--primary-hover);
-  transform: translateY(-2px);
+  transform: translateX(3px);
 }
 
 @media (min-width: 768px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .curriculo {
-    width: 17%;
+  .card {
+    padding-left: 4rem;
+  }
+  .card + .card {
+    border-left: 1px solid var(--border);
   }
 }
