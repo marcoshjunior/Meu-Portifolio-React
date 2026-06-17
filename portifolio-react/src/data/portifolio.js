@@ -9,9 +9,9 @@ export const profile = {
 
 export const navLinks = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Cursos", href: "#cursos" },
-  { label: "Projetos", href: "#projetos" },
   { label: "Tecnologias", href: "#tecnologias" },
+  { label: "Projetos", href: "#projetos" },
+  { label: "Cursos", href: "#cursos" },
   { label: "Contato", href: "#contato" },
 ];
 
