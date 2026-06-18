@@ -11,10 +11,17 @@ export default function Courses() {
         <div className={styles.grid}>
           {courses.map((group) => (
             <article className={styles.card} key={group.title}>
-              <h3>{group.title}</h3>
-              <p className={styles.institution}>{group.institution}</p>
-              <p className={styles.year}>{group.year}</p>
-              <p className={styles.description}>{group.description}</p>
+              <div className={styles.year}>
+                <p>{group.year}</p>
+              </div>
+              <div className={styles.info}>
+                <div>
+                  <p className={styles.institution}>{group.institution}</p>
+                  <p className={styles.type}>{group.type}</p>
+                </div>
+                <h3>{group.title}</h3>
+                <p className={styles.description}>{group.description}</p>
+              </div>
             </article>
           ))}
         </div>

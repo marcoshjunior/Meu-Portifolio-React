@@ -3,6 +3,7 @@
 .grid {
   display: grid;
   gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card {
@@ -30,6 +31,7 @@
 }
 .skills:hover {
   border-left: 2px solid var(--primary);
+  padding-left: 16px;
 }
 .skills strong {
   display: block;
@@ -42,7 +44,8 @@
 }
 
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
+  .tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

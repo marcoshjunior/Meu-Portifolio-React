@@ -9,15 +9,15 @@ export const profile = {
 
 export const navLinks = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Tecnologias", href: "#tecnologias" },
   { label: "Projetos", href: "#projetos" },
+  { label: "Tecnologias", href: "#tecnologias" },
   { label: "Cursos", href: "#cursos" },
   { label: "Contato", href: "#contato" },
 ];
 
 export const technologies = [
   {
-    title: "Frontend",
+    title: "Tecnologias que utilizo",
     items: [
       {
         name: "HTML5",
@@ -31,11 +31,6 @@ export const technologies = [
         name: "React",
         description: "Criação de interfaces e componentização",
       },
-    ],
-  },
-  {
-    title: "Backend",
-    items: [
       {
         name: "JavaScript",
         description: "Lógica e manipulação de dados",
@@ -60,6 +55,18 @@ export const technologies = [
       {
         name: "Node.js",
         description: "Criação de APIs REST",
+      },
+      {
+        name: "Express",
+        description: "Rotas e middleware para APIs",
+      },
+      {
+        name: "MongoDB",
+        description: "Modelagem e consulta de dados",
+      },
+      {
+        name: "Google Cloud",
+        description: "Deploy e gerenciamento de aplicações",
       },
     ],
   },
@@ -108,6 +115,7 @@ export const courses = [
   {
     title: "Gestão da Tecnologia da Informação",
     institution: "Unicesumar",
+    type: "Graduação",
     year: "2023 - 2026",
     description:
       "Foco em gestão de processos de TI, infraestrutura, governança, análise de sistemas e gestão de projetos tecnológicos. Desenvolvimento de conhecimentos em banco de dados, redes, engenharia de software e estratégias para alinhar tecnologia às necessidades do negócio.",
@@ -115,6 +123,7 @@ export const courses = [
   {
     title: "Google Cloud",
     institution: "Google",
+    type: "Certificação",
     year: "2026",
     description:
       "Foco nos fundamentos de computação em nuvem utilizando Google Cloud Platform (GCP), incluindo conceitos de hospedagem, armazenamento, serviços cloud, infraestrutura escalável e deploy de aplicações.",
@@ -122,6 +131,7 @@ export const courses = [
   {
     title: "Imersão dev back end",
     institution: "Alura",
+    type: "Curso",
     year: "2024",
     description:
       "Curso prático de desenvolvimento back-end com foco na criação de APIs e integração entre aplicações utilizando Node.js, JavaScript, Express e Google Gemini.",
