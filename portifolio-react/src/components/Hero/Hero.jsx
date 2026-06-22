@@ -1,6 +1,8 @@
 import { profile } from "../../data/portifolio";
 import FadeInSection from "../FadeInSection/FadeInSection";
 import styles from "./Hero.module.css";
+import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
+import ButtonSecondary from "../Button/ButtonSecondary/ButtonSecondary";
 
 export default function Hero() {
   return (
@@ -8,7 +10,6 @@ export default function Hero() {
       <div className="container">
         <FadeInSection />
         <div className={styles.content}>
-          {/*<p className={styles.badge}>Disponivel para freelas e estagio</p>*/}
           <h1>
             Olá, eu sou <span>{profile.name}</span>
           </h1>
@@ -19,12 +20,8 @@ export default function Hero() {
           <p className={styles.subtitle}>{profile.bio}</p>
 
           <div className={styles.actions}>
-            <a className={styles.primary} href="#projetos">
-              Ver projetos
-            </a>
-            <a className={styles.secondary} href="#contato">
-              falar comigo
-            </a>
+            <ButtonPrimary texto="Falar comigo" href="#contato" />
+            <ButtonSecondary texto="Ver projetos" href="#projetos" />
           </div>
         </div>
       </div>

@@ -55,31 +55,6 @@ h2 {
   gap: 1rem;
 }
 
-.primary {
-  background: var(--primary);
-  color: white;
-  padding: 0.9rem 1.3rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: 0.2s;
-}
-.primary:hover {
-  background: var(--primary-hover);
-  transform: translateY(-2px);
-}
-
-.secondary {
-  border: 1px solid var(--primary);
-  color: var(--primary);
-  padding: 0.9rem 1.3rem;
-  border-radius: var(--radius);
-  transition: 0.2s;
-}
-.secondary:hover {
-  background: var(--primary);
-  color: white;
-}
-
 @media (min-width: 768px) {
   .hero {
     padding-top: 2rem;

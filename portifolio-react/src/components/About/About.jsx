@@ -1,5 +1,6 @@
 import FadeInSection from "../FadeInSection/FadeInSection";
 import styles from "./About.module.css";
+import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 
 export default function About() {
   return (
@@ -26,14 +27,13 @@ export default function About() {
             </p>
           </article>
         </div>
-        <a
-          className={styles.curriculo}
+        <ButtonPrimary
+          texto="Baixar CV"
           href="../../assets/pdf/Marcos-curriculo.pdf"
           download="Curriculo-marcos.pdf"
           type="applicaton/pdf"
-        >
-          Baixar CV
-        </a>
+          className={styles.downloadButton}
+        />
       </div>
     </section>
   );

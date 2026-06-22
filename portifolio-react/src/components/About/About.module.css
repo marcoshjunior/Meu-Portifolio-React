@@ -26,21 +26,8 @@
   line-height: 1.8;
   margin: 0;
 }
-
-.curriculo {
-  display: flex;
-  justify-content: center;
-  background: var(--primary);
-  margin-top: 50px;
-  width: 130px;
-  padding: 0.9rem 1.3rem;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: 0.2s;
-}
-.curriculo:hover {
-  background: var(--primary-hover);
-  transform: translateX(3px);
+.downloadButton {
+  width: 150px;
 }
 
 @media (min-width: 768px) {
