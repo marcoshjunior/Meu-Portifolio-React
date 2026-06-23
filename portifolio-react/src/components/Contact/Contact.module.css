@@ -16,18 +16,9 @@
 }
 
 .emailButton {
-  display: inline-flex;
-  background: var(--primary);
-  padding: 10px 15px;
-  margin-top: 20px;
+  display: flex;
+  margin-top: 50px;
   margin-bottom: 20px;
-  border-radius: var(--radius);
-  font-weight: 600;
-  transition: 0.25s ease;
-}
-.emailButton:hover {
-  background: var(--primary-hover);
-  transform: translateX(4px);
 }
 
 .links {

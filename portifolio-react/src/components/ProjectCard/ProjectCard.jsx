@@ -1,4 +1,5 @@
 import styles from "./ProjectCard.module.css";
+import ButtonTertiary from "../Button/ButtonTertiary/ButtonTertiary";
 
 export default function ProjectCard({ project }) {
   return (
@@ -19,22 +20,18 @@ export default function ProjectCard({ project }) {
           ))}
         </div>
         <div className={styles.actions}>
-          <a
+          <ButtonTertiary
+            texto={"Ver demo"}
             href={project.demo}
             target="_blank"
             rel="noreferrer"
-            className={styles.primary}
-          >
-            Ver demo
-          </a>
-          <a
+          />
+          <ButtonTertiary
+            texto={"Código"}
             href={project.code}
             target="_blank"
             rel="noreferrer"
-            className={styles.secondary}
-          >
-            Código
-          </a>
+          />
         </div>
       </div>
     </article>

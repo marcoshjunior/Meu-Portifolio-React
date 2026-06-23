@@ -1,9 +1,9 @@
 import styles from "./ButtonPrimary.module.css";
 import { FaArrowRight } from "react-icons/fa";
 
-function ButtonPrimary({ texto, className = "", ...props }) {
+function ButtonPrimary({ texto, ...props }) {
   return (
-    <a className={`${styles.primary} ${className}`} {...props}>
+    <a className={styles.primary} {...props}>
       {texto}
       <FaArrowRight className={styles.icon} />
     </a>

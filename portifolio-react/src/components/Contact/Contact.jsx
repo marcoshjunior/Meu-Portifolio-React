@@ -1,6 +1,7 @@
 import styles from "./Contact.module.css";
 import { profile } from "../../data/portifolio";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import ButtonPrimary from "../Button/ButtonPrimary/ButtonPrimary";
 
 export default function Contact() {
   return (
@@ -14,9 +15,12 @@ export default function Contact() {
             rápido possível.
           </p>
 
-          <a href={`malito: ${profile.email}`} className={styles.emailButton}>
-            Enviar email
-          </a>
+          <div className={styles.emailButton}>
+            <ButtonPrimary
+              texto="Enviar e-mail"
+              href={`malito: ${profile.email}`}
+            />
+          </div>
         </div>
 
         <div className={styles.links}>

@@ -26,8 +26,9 @@
   line-height: 1.8;
   margin: 0;
 }
-.downloadButton {
-  width: 150px;
+.download {
+  display: flex;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -39,5 +40,8 @@
   }
   .card + .card {
     border-left: 1px solid var(--border);
+  }
+  .download {
+    margin-top: 40px;
   }
 }

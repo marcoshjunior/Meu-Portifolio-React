@@ -57,28 +57,5 @@
 
 .actions {
   display: flex;
-  gap: 1rem;
-}
-
-.primary {
-  background: var(--primary);
-  color: white;
-  padding: 0.8rem 1rem;
-  border-radius: 12px;
-  font-weight: 600;
-  transition: 0.2s ease;
-}
-.primary:hover {
-  background: var(--primary-hover);
-}
-.secondary {
-  border: 1px solid var(--border);
-  padding: 0.8rem 1rem;
-  border-radius: 12px;
-  color: var(--text);
-  transition: 0.2s ease;
-}
-.secondary:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  gap: 2rem;
 }
