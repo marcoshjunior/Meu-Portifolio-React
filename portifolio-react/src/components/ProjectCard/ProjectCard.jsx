@@ -16,12 +16,16 @@ export default function ProjectCard({ project }) {
         <p>{project.description}</p>
         <div className={styles.stack}>
           {project.stack.map((item) => (
-            <span key={item}>{item}</span>
+            <div className={styles.stack_item}>
+              <span key={item} className={styles.stack_label}>
+                {item}
+              </span>
+            </div>
           ))}
         </div>
         <div className={styles.actions}>
           <ButtonTertiary
-            texto={"Ver demo"}
+            texto={"Abrir projeto"}
             href={project.demo}
             target="_blank"
             rel="noreferrer"

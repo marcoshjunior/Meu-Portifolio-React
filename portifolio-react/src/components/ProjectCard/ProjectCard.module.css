@@ -44,15 +44,32 @@
 
 .stack {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 25px;
 }
-.stack span {
-  background: var(--bg);
-  padding: 0.6rem 0.9rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
+.stack_item {
+  padding: 0 1rem;
+  position: relative;
+}
+.stack_item:first-child {
+  padding-left: 0;
+}
+.stack_item + .stack_item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background: var(--text-second);
+}
+.stack_item .stack_label {
+  font-weight: 500;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 .actions {
