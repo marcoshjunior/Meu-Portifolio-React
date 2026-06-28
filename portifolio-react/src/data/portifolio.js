@@ -1,3 +1,8 @@
+import imgMoeda from "/src/assets/images/img-moeda.png";
+import imgCalculoIMC from "/src/assets/images/img-calculoIMC.png";
+import imgAdvinhacao from "/src/assets/images/img-advinhacao.png";
+import imgLinktree from "/src/assets/images/img-linktree.png";
+
 export const profile = {
   name: "Marcos Jr",
   role: "Desenvolvedor de Software",
@@ -77,7 +82,7 @@ export const projects = [
     title: "Conversor de Moedas",
     description:
       "Converte moedas utilizando taxas de câmbio atualizadas por meio de uma API externa.",
-    image: "/src/assets/images/img-moeda.png",
+    image: imgMoeda,
     stack: ["HTML", "CSS", "JavaScript", "API"],
     demo: "https://marcoshjunior.github.io/Conversor-de-Moedas/",
     code: "https://github.com/marcoshjunior/Conversor-de-Moedas",
@@ -86,7 +91,7 @@ export const projects = [
     title: "Calculo de IMC",
     description:
       "Calculadora de Massa Corporal (IMC) e com base no peso e altura informados pelo usuário exibe a sua classificação.",
-    image: "/src/assets/images/img-calculoIMC.png",
+    image: imgCalculoIMC,
     stack: ["HTML", "CSS", "JavaScript"],
     demo: "https://marcoshjunior.github.io/CalcularIMC/",
     code: "https://github.com/marcoshjunior/CalcularIMC",
@@ -95,7 +100,7 @@ export const projects = [
     title: "Jogo da Advinhação",
     description:
       "Jogo interativo onde o usuário tenta advinhar um número aleatório gerado pelo sistema. O projeto foi criado para praticar lógica condicional e geração de números aleatórios",
-    image: "/src/assets/images/img-advinhacao.png",
+    image: imgAdvinhacao,
     stack: ["HTML", "CSS", "JavaScript"],
     demo: "https://marcoshjunior.github.io/Adivinhacao/",
     code: "https://github.com/marcoshjunior/Adivinhacao",
@@ -104,7 +109,7 @@ export const projects = [
     title: "Linktree",
     description:
       "Pagina estilo 'linktree' para reunir links de redes sociais e projetos em um só lugar, com foco em uma interface limpa, responsiva e agradável",
-    image: "/src/assets/images/img-linktree.png",
+    image: imgLinktree,
     stack: ["HTML", "CSS"],
     demo: "https://marcoshjunior.github.io/Links/",
     code: "https://github.com/marcoshjunior/Links",
